@@ -165,8 +165,8 @@ void menuSetas(char nome[30]) {
 
 int main(int argc, char **argv) {
 	system("cls");
-	menuSetas("");
-	exclusaoFisica();
+	if(argc>1)menuSetas(argv[1]);
+	else system("login");
 }
 void iniciaAparelho() {
 	geral.qtde=0;
